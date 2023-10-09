@@ -44,20 +44,11 @@ main {
 }
 
 /* Hero */
-.hero .container {
-    max-width: 500px;
-}
-
 .hero {
     background-color: var(--secondary-color);
     /* Debug */
     min-height: 300px;
 }
-
-.hero-img {
-    max-width: 70%;
-}
-
 /* Portfolio */
 
 
@@ -69,18 +60,11 @@ main {
     min-height: 300px;
 }
 
-.about .container-sm {
-    width: 65%;
-}
-
 .about h3 {
     color: var(--dark-title);
 }
 
 /* Contact me */
-.contact-me .container-sm {
-    width: 60%;
-}
 
 /* FOOTER */
 .footer-top {
