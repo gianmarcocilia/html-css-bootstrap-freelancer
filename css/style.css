@@ -1,0 +1,27 @@
+/* Custom properties */
+:root {
+    --header-color: rgb(44 62 80);
+    --header-height: 5rem;
+    --color-white: white;
+}
+
+/* COMMON */
+img {
+    max-width: 100%;
+}
+
+/* Debug */
+[class*="col-"] {
+    border: 1px solid black;
+}
+
+/* HEADER */
+header {
+    background-color: var(--header-color);
+    height: var(--header-height); 
+    color: var(--color-white);
+}
+
+header .container-md, header .row {
+    height: var(--header-height);
+}
