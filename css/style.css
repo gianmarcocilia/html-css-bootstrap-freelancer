@@ -1,11 +1,11 @@
 /* Custom properties */
 :root {
-    --primary-color: rgb(44 62 80);
-    --secondary-color:rgb(26 188 156);
-    --tertiary-color: rgb(58 84 109);
-    --dark-title: rgb(51 51 51);
-    --header-height: 5rem;
-    --primary-text-color: white;
+    --ms_primary-color: rgb(44 62 80);
+    --ms_secondary-color:rgb(26 188 156);
+    --ms_tertiary-color: rgb(58 84 109);
+    --ms_dark-title: rgb(51 51 51);
+    --ms_header-height: 5rem;
+    --ms_primary-text-color: white;
 }
 
 /* COMMON */
@@ -13,65 +13,60 @@ img {
     max-width: 100%;
 }
 
-/* Debug */
-[class*="col-"] {
-    border: 1px solid black;
-}
-
-.col-12 {
-    min-height: 200px;
-}
 
 /* HEADER */
-header {
-    background-color: var(--primary-color);
-    height: var(--header-height); 
-    color: var(--primary-text-color);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
+.ms_header-nav {
+    background-color: var(--ms_primary-color);
+    height: var(--ms_header-height);
+    color: var(--ms_primary-text-color);
 }
 
-header .container-md, header .row {
-    height: var(--header-height);
+.ms_header-nav a {
+    color: inherit;
+}
+
+.ms_header-nav .hamburger {
+    color: var(--ms_primary-text-color);
 }
 
 /* MAIN */
 main {
-    padding-top: calc(var(--header-height));
+    padding-top: calc(var(--ms_header-height));
 }
 
 /* Hero */
 .hero {
-    background-color: var(--secondary-color);
+    background-color: var(--ms_secondary-color);
     /* Debug */
     min-height: 300px;
+}
+
+.hero-img {
+    max-width: 400px;
 }
 /* Portfolio */
 
 
 /* About */
 .about {
-    background-color: var(--secondary-color);
-    color: var(--primary-text-color);
+    background-color: var(--ms_secondary-color);
+    color: var(--ms_primary-text-color);
     /* Debug */
     min-height: 300px;
 }
 
 .about h3 {
-    color: var(--dark-title);
+    color: var(--ms_dark-title);
 }
 
 /* Contact me */
 
 /* FOOTER */
 .footer-top {
-    background-color: var(--tertiary-color);
-    color: var(--primary-text-color);
+    background-color: var(--ms_tertiary-color);
+    color: var(--ms_primary-text-color);
 }
 
 .footer-bottom {
-    background-color: var(--primary-color);
+    background-color: var(--ms_primary-color);
 }
