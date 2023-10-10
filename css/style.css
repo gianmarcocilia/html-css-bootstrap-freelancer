@@ -13,6 +13,13 @@ img {
     max-width: 100%;
 }
 
+.ms_line-star {
+    display: inline-block;
+    border-radius: 10px;
+    width: 85px;
+    border: 2px solid;
+    opacity: 1;
+}
 
 /* HEADER */
 .ms_header-nav {
@@ -25,7 +32,7 @@ img {
     color: inherit;
 }
 
-.ms_header-nav .hamburger {
+.ms_header-nav .navbar-toggler {
     color: var(--ms_primary-text-color);
 }
 
@@ -35,32 +42,54 @@ main {
 }
 
 /* Hero */
-.hero {
+.ms_hero {
     background-color: var(--ms_secondary-color);
-    /* Debug */
-    min-height: 300px;
+    color: var(--ms_primary-text-color);
 }
 
 .hero-img {
     max-width: 400px;
 }
 /* Portfolio */
-
-
-/* About */
-.about {
-    background-color: var(--ms_secondary-color);
-    color: var(--ms_primary-text-color);
-    /* Debug */
-    min-height: 300px;
-}
-
-.about h3 {
+.ms_portfolio h2 {
     color: var(--ms_dark-title);
 }
 
-/* Contact me */
+.ms_portfolio {
+    color: var(--ms_primary-color);
+}
 
+/* About */
+.ms_about {
+    background-color: var(--ms_secondary-color);
+    color: var(--ms_primary-text-color);
+}
+
+/* Contact me */
+.ms_contact-me {
+    color: var(--ms_primary-color);
+}
+
+.ms_contact-me h2 {
+    color: var(--ms_dark-title);
+}
+
+.ms_form-input {
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--ms_primary-color);
+}
+
+.ms_contact-me form .btn {
+    background-color: var(--ms_secondary-color);
+    color: var(--ms_primary-text-color);
+}
 /* FOOTER */
 .footer-top {
     background-color: var(--ms_tertiary-color);
