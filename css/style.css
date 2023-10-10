@@ -91,11 +91,30 @@ main {
     color: var(--ms_primary-text-color);
 }
 /* FOOTER */
-.footer-top {
+.ms_footer-top .ms_footer-links a {
+    color: inherit;
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
+}
+
+.ms_footer-top {
     background-color: var(--ms_tertiary-color);
     color: var(--ms_primary-text-color);
 }
 
+.ms_footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.bootstrap-link {
+    color: var(--ms_secondary-color);
+}
+
 .footer-bottom {
     background-color: var(--ms_primary-color);
+    color: var(--ms_primary-text-color);
 }
